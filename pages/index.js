@@ -5,6 +5,7 @@ import { generateRobotsTxt } from '@/lib/robots.txt'
 import { generateRss } from '@/lib/rss'
 import { getLayoutByTheme } from '@/themes/theme'
 import { useRouter } from 'next/router'
+import { Analytics } from '@vercel/analytics/react'
 
 /**
  * 首页布局
@@ -17,7 +18,12 @@ const Index = props => {
     theme: siteConfig('THEME'),
     router: useRouter()
   })
-  return <Layout {...props} />
+  return (
+    <>
+      <Analytics />
+      <Layout {...props} />
+    </>
+  )
 }
 
 /**
