@@ -59,13 +59,13 @@ const Hero = props => {
     <header
       id='header'
       style={{ zIndex: 1 }}
-      className='w-full h-screen relative bg-black'>
+      className='w-full h-screen relative bg-sky-300	'>
       <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-start w-full pt-[10vh]'>
         <LazyImage
           id='cow-cover'
           alt={siteInfo?.title}
-          src='/svg/cow.svg'
-          className={`header-cover w-[80vw] max-h-[80vh] object-fill object-center absolute`}
+          src='/svg/ox.svg'
+          className={`header-cover w-[70vw] max-h-[70vh] object-fill bottom-[5vh] object-center absolute`}
         />
       </div>
       <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
